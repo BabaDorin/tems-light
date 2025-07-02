@@ -215,6 +215,7 @@ namespace temsAPI
             });
 
             scheduler.Start();
+	    //nu inteleg nimic((
         }
     }
 }
