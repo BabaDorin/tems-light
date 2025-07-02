@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿
+using Domain.Entities;
 using Infrastructure.Persistence.Entities;
 
 namespace Infrastructure.Mapping;

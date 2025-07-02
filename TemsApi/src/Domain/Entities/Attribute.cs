@@ -1,8 +1,8 @@
-﻿namespace Domain.Entities
+﻿namespace Domain.Entities;
+
+public class Attribute
 {
-    public class Attribute
-    {
-        public string AttributeName { get; set; }
-        public string Value { get; set; }
-    }
+    public string AttributeName { get; set; }
+    public string Value { get; set; }
 }
+

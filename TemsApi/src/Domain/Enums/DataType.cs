@@ -1,8 +1,8 @@
-﻿namespace Domain.Enums
+﻿namespace Domain.Enums;
+
+public enum DataType
 {
-    public enum DataType
-    {
-        Text,
-        Number
-    }
+    Text,
+    Number
 }
+

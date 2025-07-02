@@ -6,7 +6,7 @@ namespace Infrastructure.Persistence.Entities;
 public class AssetDefinitionDb
 {
     [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("_id")]
     public Guid Id { get; set; }
 

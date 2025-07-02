@@ -17,6 +17,8 @@ public class DefinitionRepository : IDefinitionRepository
     }
     public async Task<Guid> CreateAsync(AssetDefinition assetDefinition, CancellationToken cancellationToken)
     {
+        assetDefinition.Id = Guid.NewGuid();
+
         AssetDefinitionDb definition = Mapper.MapToDb(assetDefinition);
 
         await _definitions.InsertOneAsync(definition,cancellationToken);

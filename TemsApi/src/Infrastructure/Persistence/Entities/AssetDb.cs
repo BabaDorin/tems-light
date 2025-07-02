@@ -6,7 +6,7 @@ namespace Infrastructure.Persistence.Entities;
 public class AssetDb
 {
     [BsonId]
-    [BsonRepresentation(BsonType.ObjectId)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("_id")]
     public Guid Id { get; set; }
 
@@ -16,15 +16,15 @@ public class AssetDb
     [BsonElement("temsId")]
     public string TemsId { get; set; }
 
-    [BsonRepresentation(BsonType.DateTime)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("uploadedBy")]
     public string UploadedBy { get; set; }
 
-    [BsonRepresentation(BsonType.DateTime)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("uploadedAt")]
     public DateTime UploadedAt { get; set; }
 
-    [BsonRepresentation(BsonType.DateTime)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("purchasedAt")]
     public DateTime PurchasedAt { get; set; }
 
@@ -34,7 +34,7 @@ public class AssetDb
     [BsonElement("type")]
     public string Type { get; set; }
 
-    [BsonRepresentation(BsonType.ObjectId)]
+    [BsonRepresentation(BsonType.String)]
     [BsonElement("typeId")]
     public Guid TypeId { get; set; }
 

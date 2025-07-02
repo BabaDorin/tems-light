@@ -1,10 +1,10 @@
 ﻿using Domain.Enums;
 
-namespace Domain.Entities
+namespace Domain.Entities;
+
+public class Price
 {
-    public class Price
-    {
-        public double Amount { get; set; }
-        public Currency Currency { get; set; }
-    }
+    public double Amount { get; set; }
+    public Currency Currency { get; set; }
 }
+

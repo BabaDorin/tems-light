@@ -1,10 +1,10 @@
-﻿namespace Domain.Enums
+﻿namespace Domain.Enums;
+
+public enum Currency
 {
-    public enum Currency
-    {
-        USD,
-        EUR, 
-        MDL, 
-        RON
-    }
+    USD,
+    EUR,
+    MDL,
+    RON
 }
+

@@ -19,7 +19,6 @@ public class AssetManager : IAssetManager
         _definitionRepository = definitionRepository;
         _typeRepository = typeRepository;
     }
-
     public async Task<Result<Guid>> CreateAsync(Asset asset, CancellationToken cancellationToken)
     {
         var existingType = await _typeRepository.FindByIdAsync(asset.TypeId, cancellationToken);

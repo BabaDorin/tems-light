@@ -18,7 +18,7 @@
 
         public static ValidationResult Success()
         {
-            return new ValidationResult(false, null);
+            return new ValidationResult(true, null);
         }
     }
 }
